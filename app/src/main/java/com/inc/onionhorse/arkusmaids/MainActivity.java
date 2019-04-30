@@ -22,16 +22,23 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonRegister;
+
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextView textViewSignin;
 
+
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+
+
 
 
     @Override
@@ -59,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonRegister.setOnClickListener(this);
         textViewSignin.setOnClickListener(this);
     }
+
 
     private void registerUser(){
         String email = editTextEmail.getText().toString().trim();

@@ -19,40 +19,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Testing"
+            android:text="Enter your data to end registry"
             android:id="@+id/textViewUserEmail"
             android:layout_gravity="center_horizontal" />
 
-        <TextView
-            android:id="@+id/textViewMensaje"
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_margin="15dp"
+            android:hint="Enter Username"
+            android:id="@+id/editUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:hint="Enter First Name"
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:hint="Enter Last Name"
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="Eliga uno de los servicios: "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:hint="Enter Address"
+            android:id="@+id/editAddress"
+            />
 
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/listServicios"
-                android:divider="#f00"
-                android:dividerHeight="1dp" >
+        <EditText
+            android:layout_margin="15dp"
+            android:hint="Enter Phone number"
+            android:inputType="phone"
+            android:id="@+id/editphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            </ListView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/buttonSave"
+            android:layout_margin="15dp"
+            />
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Logout"
+            android:text="Exit"
             android:id="@+id/buttonLogout"
             android:layout_gravity="center_horizontal" />
 

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "199139126323-perp1v1ced97fj1s1p1j3m5pj3v86iqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inc.onionhorse.arkusmaids",
+            "certificate_hash": "7dc41f1daac97fa626a4257495c5a6c6950cefae"
+          }
+        },
+        {
           "client_id": "199139126323-66olvf2g69bu69skh5805vkfe0ve49df.apps.googleusercontent.com",
           "client_type": 3
         }
