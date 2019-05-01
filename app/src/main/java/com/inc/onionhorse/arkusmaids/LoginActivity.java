@@ -21,7 +21,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private Button buttonSignin;
     private EditText editTextEmail;
-    private EditText editTextUserName;
     private EditText editTextPassword;
     private TextView textViewSignUp;
 
@@ -54,15 +53,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void userLogin(){
-        String username = editTextUserName.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
-        if (TextUtils.isEmpty(email)){
-            //Username esta vacio
-            Toast.makeText(this, "Please enter a username", Toast.LENGTH_SHORT).show();
-            return;
-        }
 
         if (TextUtils.isEmpty(email)){
             //Correo esta vacio
